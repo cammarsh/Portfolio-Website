@@ -1,0 +1,128 @@
+body{
+	font-family: 'Amiko', sans-serif;
+	background-color: #C9EBE6;
+	width: 100%;
+}
+
+.container{
+	width: 90%
+}
+.header__title h1{
+	text-align: right;
+	padding-right: 10%;
+}
+
+.header__title h3{
+	text-align: right;
+	padding-right: 10%;
+}
+
+
+.header__caption{
+	line-height: 1.25;
+	padding-bottom:20px;
+}
+
+.caption__row{
+	width: 100%;
+}
+
+.secondlink__row{
+	padding-top: 80px;
+	margin-bottom: 50px;
+}
+
+.stage_management{
+	padding-left: 5%;
+}
+
+.img_list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	z-index: 200;
+}
+
+.img_list li {
+	display: inline-block;
+	height: 333px;
+	width: 500px;
+	margin: 0 1 em 1 em 0;
+	position: relative;
+
+}
+span.text_content {
+	background: rgba(0,0,0,0.5);
+	color:white;
+	cursor: pointer;
+	display:table;
+	height: 333px;
+	width: 500px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+	z-index: 201;
+}
+
+span.text_content span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.img_list li:hover span.text_content{
+	opacity: .9;
+}
+
+
+@media screen and (min-width: 1200px){
+	.container{
+		width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media screen and (max-width: 700px){
+	.portrait {
+		display: none;
+	}
+
+	.header__title{
+		width: 100%;
+	}
+	
+	.header__title h1{
+		font-size: 2.5em;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	.header__title h3{
+		font-size: 1.5em;
+		margin-top: 1%;
+		width: 100%;
+		text-align: center;	}
+
+}
+
+@media screen and (max-width: 991px){
+	.secondlink__row{
+		padding-top: 10px;
+	}
+}
+
+@media screen and (min-width: 701px) (max-width: 1000px){
+	.portrait{
+		display: flex;
+		order: 0;
+	}
+	.header__title{
+		float:left;
+	}
+}
