@@ -1,3 +1,5 @@
+/* Web Page Styles*/
+
 body{
 	font-family: 'Amiko', sans-serif;
 	background-color: #C9EBE6;
@@ -59,6 +61,8 @@ body{
 	text-align: center;
 	z-index: 200;
 }
+
+/*Style for image overlays*/
 
 .img_list li {
 	display: inline-block;
@@ -146,6 +150,8 @@ span.text_content2 span {
 .contact_row{
 	padding-top: 50px;
 }
+
+/*Reponsive Styles*/
 
 @media screen and (max-width: 500px){
 	.aboutmeimage{
